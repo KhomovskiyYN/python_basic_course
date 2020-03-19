@@ -25,10 +25,23 @@
 # print(kilometer_distances)
 #
 # [1.6, 10.4, 27.84, 3.84, 14.4]
+#
+# from functools import reduce
+#
+# items = [1, 2, 3, 4]
+# sum_all = reduce(lambda x, y: x * y, items)
+#
+# print(sum_all)
 
-from functools import reduce
 
-items = [1, 2, 3, 4]
-sum_all = reduce(lambda x, y: x * y, items)
+file = open('file_task_5_2.txt', 'r')
 
-print(sum_all)
+lines = file.readlines()    # readlines - возвращает список
+#print(lines, type(lines))
+
+for line in lines:
+    print(line)
+    for el in line:
+        print(el)
+
+file.close()
