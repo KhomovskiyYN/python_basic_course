@@ -43,7 +43,7 @@ class Cell:
                                                                                            # кратными n, если am > n
         self.row.append(['*' for j in range(am % n)])  #дозаполняем остатком от деления am / n
         #print(self.row)
-        self.matr = '\n'.join([''.join(['%10s' % '*' for i in row]) for row in self.row])  #выводим в виде матрицы
+        self.matr = '\n'.join([''.join(['%2s' % '*' for i in row]) for row in self.row])  #выводим в виде матрицы
 
         print(self.matr)
 
